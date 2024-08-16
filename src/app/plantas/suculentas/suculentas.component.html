@@ -1,0 +1,26 @@
+<h1>Suculentas</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{nombre}}</dd>
+
+    <td>Tamaño:</td>
+    <dd>{{ displayTamanio }}</dd>
+
+    <td>Color:</td>
+    <dd>Verde</dd>
+
+    <td>Forma:</td>
+    <dd>Variegada</dd>
+</dl>
+
+<button *ngIf="mostrarButton01" class="btn btn-primary mx-2" (click)="changeNname()">Cambiar nombre</button>
+<button class="btn btn-primary">Cambiar tamaño</button>
+
+<ul>
+    <li *ngFor="let producto of productos">
+        {{producto}}
+    </li>
+</ul>
+
+<app-footer></app-footer>
